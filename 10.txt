@@ -1,0 +1,2 @@
+We cannot handle dates directly with JSON.stringify() and JSON.parse().
+We can convert the dates in to strings before serializing and convert them back in to date objects after parsing.

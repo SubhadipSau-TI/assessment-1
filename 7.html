@@ -1,0 +1,26 @@
+<!-- When do we use event.preventDefault()? Give an example.
+
+We use event.preventDefault() to prevent the default behavior of an browser or html element.
+For action like click, submit etc, to stop performing browser its default action we use event.preventDefault() with event handlers.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://github.com/SubhadipSau-TI/assessment-1" id="mylink"
+      >Click</a
+    >
+    <script>
+      document
+        .getElementById("mylink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          alert("Prevent!");
+        });
+    </script>
+  </body>
+</html>
